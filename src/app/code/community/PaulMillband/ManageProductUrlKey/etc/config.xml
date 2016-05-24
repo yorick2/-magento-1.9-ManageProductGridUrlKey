@@ -11,11 +11,6 @@
             <paulmillband_ManageProductUrlKey>
                 <class>PaulMillband_ManageProductUrlKey_Block</class>
             </paulmillband_ManageProductUrlKey>
-            <adminhtml>
-                <rewrite>
-                   <catalog_product_grid>PaulMillband_ManageProductUrlKey_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
-                </rewrite>
-            </adminhtml>
         </blocks>
         <helpers>
             <paulmillband_ManageProductUrlKey>
@@ -49,6 +44,25 @@
                 </paulmillband_ManageProductUrlKey>
             </updates>
         </layout>
+        <events>
+            <adminhtml_block_html_before>
+                <observers>
+                    <paulmillband_ManageProductUrlKey>
+                        <!-- Add column to catalog product grid -->
+                        <class>PaulMillband_ManageProductUrlKey_Model_Adminhtml_Observer</class>
+                        <method>onBlockHtmlBefore</method>
+                    </paulmillband_ManageProductUrlKey>
+                </observers>
+            </adminhtml_block_html_before>
+            <eav_collection_abstract_load_before>
+                <observers>
+                    <paulmillband_ManageProductUrlKey>
+                        <!-- Add column to product list -->
+                        <class>PaulMillband_ManageProductUrlKey_Model_Adminhtml_Observer</class>
+                        <method>onEavLoadBefore</method>
+                    </paulmillband_ManageProductUrlKey>
+                </observers>
+            </eav_collection_abstract_load_before>
+        </events>
     </adminhtml>
-    
 </config>
