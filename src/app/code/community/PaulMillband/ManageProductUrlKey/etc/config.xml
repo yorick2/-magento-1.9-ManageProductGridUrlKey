@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <PaulMillband_ManageProductUrlKey>
+            <version>0.1.0</version>
+        </PaulMillband_ManageProductUrlKey>
+    </modules>
+    <global>
+        <blocks>
+            <paulmillband_ManageProductUrlKey>
+                <class>PaulMillband_ManageProductUrlKey_Block</class>
+            </paulmillband_ManageProductUrlKey>
+            <adminhtml>
+                <rewrite>
+                   <catalog_product_grid>PaulMillband_ManageProductUrlKey_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <helpers>
+            <paulmillband_ManageProductUrlKey>
+                <class>PaulMillband_ManageProductUrlKey_Helper</class>
+            </paulmillband_ManageProductUrlKey>
+        </helpers>
+        <models>
+            <paulmillband_ManageProductUrlKey>
+                <class>PaulMillband_ManageProductUrlKey_Model</class>
+            </paulmillband_ManageProductUrlKey>
+        </models>
+    </global>
+
+    <!-- frontend layout updates -->
+    <frontend>
+        <layout>
+            <updates>
+                <paulmillband_ManageProductUrlKey>
+                    <file>paulmillband/ManageProductUrlKey.xml</file>
+                </paulmillband_ManageProductUrlKey>
+            </updates>
+        </layout>
+    </frontend>
+
+    <!-- adminhtml layout updates -->
+    <adminhtml>
+        <layout>
+            <updates>
+                <paulmillband_ManageProductUrlKey>
+                    <file>paulmillband/ManageProductUrlKey.xml</file>
+                </paulmillband_ManageProductUrlKey>
+            </updates>
+        </layout>
+    </adminhtml>
+    
+</config>

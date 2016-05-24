@@ -1,0 +1,26 @@
+htdocs/.gitignore
+htdocs/var/cache
+htdocs/var/session
+htdocs/var/report
+htdocs/var/log
+htdocs/media
+htdocs/app/etc/local.xml
+
+composer.lock
+vendor
+
+# Rocketeer
+.rocketeer/logs/*
+
+# extensions
+.sass-cache
+.tmp
+.swp
+.orig
+
+# folders
+bower_components
+node_modules
+deploy
+
+/nbproject/

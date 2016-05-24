@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <PaulMillband_ManageProductUrlKey>
+            <active>true</active>
+            <codePool>community</codePool>
+        </PaulMillband_ManageProductUrlKey>
+    </modules>
+</config>

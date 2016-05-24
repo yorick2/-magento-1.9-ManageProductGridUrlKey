@@ -1,0 +1,12 @@
+{
+    "name": "paulmillband/magento1manageproducturlkey",
+    "type": "magento-module",
+    "authors": [
+        {
+            "name": "Paul Millband",
+            "email": "paul@junowebdesign.com",
+            "role": "Senior Developer"
+        }
+    ],
+    "require": {}
+}
